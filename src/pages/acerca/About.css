@@ -1,0 +1,56 @@
+/* About.css */
+
+.aboutContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutHeader h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.missionSection,
+.visionSection,
+.valuesSection,
+.contactSection {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ul.valores {
+  list-style-type: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+li.valor {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+li.valor::before {
+  content: "✓";
+  color: #28a745;
+  position: absolute;
+  left: 0;
+}

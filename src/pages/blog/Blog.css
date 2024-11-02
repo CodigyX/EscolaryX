@@ -1,0 +1,116 @@
+.blogContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Contenedor para centrar el blogHeader */
+.headerWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Header de Blog */
+.blogHeader {
+  background: linear-gradient(to bottom, #333, #444);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  display: grid;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px; /* Define un ancho máximo */
+}
+
+.blogHeader h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.blogHeader p {
+  font-size: 1.2em;
+}
+
+/* Cuadro de Búsqueda y Botón */
+.searchInput {
+  width: 300px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+.ctaButton {
+  background-color: #030d3b;
+  color: #d6d6d6;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #04124f;
+  transform: translateY(-2px);
+}
+
+/* Sección de Libros */
+.featuredBooks {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Sección de Categorías de Libros */
+.categoriesSection {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.categoriesSection h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.categoriesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.categoryButton {
+  background-color: #030d3b;
+  color: #d6d6d6;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categoryButton i {
+  font-size: 1.2em;
+}
+
+.categoryButton:hover {
+  background-color: #04124f;
+  transform: translateY(-2px);
+}

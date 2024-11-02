@@ -1,0 +1,292 @@
+.homeContainer {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/* Header Principal */
+.homeHeader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://picsum.photos/id/20/1920/1080") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headerOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Cuadro de Búsqueda y Botón */
+.searchInput {
+  width: 300px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.ctaButton {
+  background-color: #030d3b;
+  color: #d6d6d6;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ctaButton i {
+  font-size: 1.2em;
+}
+
+.ctaButton:hover {
+  background-color: #04124f;
+  transform: translateY(-2px);
+}
+
+/* Sección de Libros Destacados y Resultados de Búsqueda */
+.featuredBooks,
+.recommendedBooks {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featuredBooks h2,
+.recommendedBooks h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.featuredBooksGrid,
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.featuredBookItem,
+.bookItem {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.featuredBookItem img,
+.bookItem img {
+  width: 80%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.featuredBookItem h3,
+.bookItem h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.featuredBookItem p,
+.bookItem p {
+  font-size: 12px;
+  color: #666;
+}
+
+.featuredBookItem:hover,
+.bookItem:hover {
+  transform: translateY(-3px);
+}
+
+.placeholderImage {
+  width: 150px;
+  height: 220px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* Sección de Introducción */
+.homeIntroduction {
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.introductionContent {
+  flex: 1;
+  padding-right: 40px;
+  color: #333;
+}
+
+.introductionImage {
+  flex: 1;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.introductionImage:hover {
+  transform: scale(1.05);
+}
+
+/* Sección de Cursos */
+.coursesSection {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.coursesSection h2 {
+  color: #333;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.courseItem {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.courseItem img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.courseItem:hover {
+  transform: translateY(-5px);
+}
+
+.allCoursesButton {
+  margin-top: 40px;
+  background-color: #030d3b;
+  color: #d6d6d6;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.allCoursesButton:hover {
+  background-color: #04124f;
+  transform: translateY(-2px);
+}
+
+/* Sección de Galería */
+.featuredGallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.galleryDescription {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.galleryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galleryItem img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.galleryItem img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Testimonios */
+.testimonialsSection {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonialsSection h2 {
+  color: #333;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Sección de Llamado a la Acción */
+.ctaSection {
+  background: linear-gradient(to bottom, #333, #444);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #979797;
+}
+
+.ctaSection p {
+  margin-bottom: 20px;
+}
